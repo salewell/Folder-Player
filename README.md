@@ -2,6 +2,7 @@
 
 一个专为本地及云端音频收藏设计的极简、美观且功能强大的 Android 文件夹音乐播放器。
 
+<img src="Screenshot_20251230_003657.jpg" width="200" alt="App 截图">  <img src="Screenshot_20251230_003819.jpg" width="200" alt="App 截图">   <img src="Screenshot_20260111_234527.jpg" width="200" alt="App 截图">   <img src="Screenshot_20260111_234635.jpg" width="200" alt="App 截图"> 
 ---
 
 ## 核心特性
