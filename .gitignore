@@ -1,0 +1,30 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk.dir)
+local.properties
+
+# Android Studio and IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# NDK
+.cxx/
+.externalNativeBuild/
+
+# Sensitive Keys and Keystores
+keystore.properties
+*.jks
+*.keystore
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Captures and Logs
+captures/
+*.log
