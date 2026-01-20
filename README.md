@@ -59,41 +59,58 @@
 
 # Folder Player (English)
 
-A minimalist, beautiful, and powerful Android music player designed specifically for local and cloud folder-based audio collections.
+A minimalist, beautiful, and powerful Android folder-based music player designed for both local and cloud audio collections.
 
-## Key Features
+<img src="Screenshot_20251230_003657.jpg" width="200" alt="App Screenshot">  <img src="Screenshot_20251230_003819.jpg" width="200" alt="App Screenshot">   <img src="Screenshot_20260111_234527.jpg" width="200" alt="App Screenshot">   <img src="Screenshot_20260111_234635.jpg" width="200" alt="App Screenshot"> 
 
-- **📂 Deep Folder Browsing**: Play music directly by directory without complex library scanning. Supports Local Storage and WebDAV (Alist/NAS).
-- **📑 CUE Sheet Support**: Perfectly parses `.cue` files, supporting virtual track splitting for FLAC/WAV/APE. Restores split-track state accurately even after app restart.
-- **📜 Comprehensive Lyrics**: Supports local `.lrc` files, embedded ID3 tag lyrics, and custom online Lyric API integration.
-- **🚀 Seamless Resume**: Instantly restores the last played song, cover art, and lyrics upon app startup, eliminating the "No Song" flicker entirely.
-- **🎨 Premium Design**: Pure black dark theme with configurable cover sizes, featuring a refined interface and smooth animations.
+---
+
+## Core Features
+
+- **📂 Deep Folder Browsing**: Play music directly by directory, supporting common formats like MP3, FLAC, OGG, M4A, AAC, WAV, etc. No complex library scanning required. Native support for WebDAV (Alist/NAS) and local storage.
+- **🚀 AI Real-time Album Insight**: Supports AI-powered retrieval for albums and artists (requires LLM API configuration).
+- **📜 Comprehensive Lyrics**: Supports local `.lrc` files, embedded ID3 tag lyrics, and custom online Lyric API integration (Pre-configured, credits to the [LrcApi](https://github.com/HisAtri/LrcApi) project).
+- **📑 CUE Sheet Support**: Perfectly parses `.cue` files, supporting virtual track splitting for FLAC/WAV.
+- **🎨 Premium Modern Design**: Dark theme with auto-detection of folder cover art. Supports embedded covers and configurable cover display sizes. Refined interface with smooth animations.
+- **🎧 Intelligent Interaction**:
+    - Auto-pause when headphones are disconnected.
+    - Path-specific sorting memory for every folder.
+    - Source management and reordering.
+    - Multi-playlist management.
+    - Two-mode playback sleep timer.
+    - File/Folder modification date display.
 
 ## Usage Instructions
 
 ### 1. Basic Navigation
-- The app uses a three-screen pager: **[Player] <-> [Browser] <-> [Settings]**.
-- Swipe left/right or tap the icons in the header to navigate.
+- The app features a three-screen pager: **[Player] <-> [File Browser] <-> [Settings]**.
+- Swipe horizontally to switch screens quickly.
+- Swipe up on the Player screen to toggle the playlist.
+- Double-tap the lyrics area to view lyrics in a waterfall flow.
+- Tap the album or folder name on the Player screen to use AI for an in-depth introduction to the album.
 
 ### 2. Playback
-- **Single Track**: Tap any audio file in the browser to start playing the folder from that song.
+- **Single Track**: Tap any audio file in the browser to start playing from that specific song within the folder.
 - **CUE Sheets**: Tap a `.cue` file to parse and play split tracks automatically.
-- **Folder Playback**: Tap the "Play" icon next to a folder name or use the "Play Current" button inside a folder.
+- **Playlist Playback**: Create new lists in the playlist view; long-press a file or folder in the browser to add it to a list.
 - **Shuffle**: Use the "Shuffle" icon at the top of a folder to play all contents in random order.
 
-### 3. Infinite Play (Auto-Next Folder)
-- Open the playlist (top right icon on Player screen) to find the **"Infinite Play"** toggle.
-- **When enabled**: The app will automatically jump to the next available directory once the current one finishes, providing an uninterrupted listening experience.
+### 3. Playlist Control Buttons
+- Tap the icon in the top right of the Player screen to call up the playlist, where you will find the **"Timer"** and **"Infinite"** buttons.
+- **Sleep Timer**: Configure a countdown by minutes or number of songs. Playback pauses when reached.
+- **Infinite Button**: When enabled, the app automatically finds and plays the next directory once the current one finishes, providing truly uninterrupted listening.
+- Standard loop and shuffle controls are also available here.
 
 ### 4. Intelligent Sorting
-- **Default Sort**: Configure your preferred global sorting method (By Name, Date, or Size) in the [Settings] screen.
-- **Path-Specific Memory**: If you manually change the sort order in a specific folder, the app will **automatically remember that setting for that specific path** and apply it every time you return.
+- **Default Sort**: Configure global default sorting (By Name, Date, or Size) in the [Settings] screen.
+- **Path-Specific Memory**: Manually changing the sort order (via the sort icon in the header) in any folder will be **automatically remembered** for that specific path.
 
 ### 5. Source Management (WebDAV/NAS)
-- Tap **"Add WebDAV"** on the browser root screen.
+- On the browser root screen, tap **"Add WebDAV"**.
 - Enter your server URL, path, and credentials.
-- **Manage Sources**: Expand a source item to access **"Move Up/Down"** for reordering or **"Delete"** to remove.
+- **Management**: Expand a source item to access **"Move Up/Down"** for reordering or **"Delete"** to remove.
 
 ### 6. Settings
 - **Cover Size**: Toggle between Standard and Large cover display modes.
-- **Lyric API**: Configure a custom URL for fetching online lyrics.
+- **Lyric API**: Configure a custom URL for online lyric fetching.
+- **ChatGPT API**: Manually configure API keys for various AI models to gain deep insights into albums and artists.
