@@ -143,7 +143,7 @@ fun MainPlayerScreen(
                 
                 // Unified Animation targets for cover properties
                 val horizontalPaddingTarget = if (lyricsExpanded || isLargeCover) 0.dp else 36.dp
-                val topPaddingTarget = if (lyricsExpanded) 4.dp else (if (isLargeCover) 0.dp else 32.dp)
+                val topPaddingTarget = if (lyricsExpanded) 4.dp else (if (isLargeCover) 0.dp else 60.dp)
                 val bottomPaddingTarget = if (lyricsExpanded) 0.dp else (if (isLargeCover) 0.dp else 24.dp)
                 val cornerSizeTarget = if (lyricsExpanded) 8.dp else (if (isLargeCover) 0.dp else 28.dp)
                 
